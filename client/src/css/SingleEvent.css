@@ -1,0 +1,126 @@
+.single-event-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: var(--padding-from-navbar) auto 0 auto;
+}
+
+.single-event-title {
+  background: rgb(245, 120, 98);
+  padding: 0.3rem 0.5rem;
+}
+
+.images-map {
+  margin: 0 auto;
+}
+
+.mapouter {
+  border: 4px solid rgb(245, 120, 98);
+}
+
+.single-event-category-type-venue-date {
+  display: grid;
+  grid-template-areas:
+    "a a b b"
+    "c c c c"
+    "d d . .";
+  background: rgb(245, 120, 98);
+}
+
+.single-event-category-type-venue-date p:nth-child(1) {
+  grid-area: a;
+}
+
+.single-event-category-type-venue-date p:nth-child(2) {
+  grid-area: b;
+}
+
+.single-event-category-type-venue-date p:nth-child(3) {
+  grid-area: c;
+}
+
+.single-event-category-type-venue-date p:nth-child(4) {
+  grid-area: d;
+}
+
+@media screen and (min-width: 996px) {
+  .single-event-container {
+    width: 800px;
+  }
+
+  .images-map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .single-event-category-type-venue-date {
+    grid-template-areas:
+      "a b c c c d";
+  }
+
+  .single-event-category-type-venue-date p>span {
+    display: block;
+  }
+}
+
+
+.single-event-description {
+  background: rgb(235, 207, 203);
+  padding: 0.2rem 0.5rem;
+}
+
+.single-event-description .description {
+  height: auto;
+  background: rgb(245, 120, 98);
+}
+
+.contact-entry-fee {
+  background-color: rgb(235, 207, 203);
+  padding: 0.3rem 0.5rem;
+}
+
+.contact span {
+  font-weight: 700;
+}
+
+.entry-fee span {
+  font-weight: 700;
+}
+
+/* single-event modal */
+.single-event-show-modal-icon {
+  position: absolute;
+  top: 6rem;
+  right: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.single-event-show-modal-icon:hover {
+  font-size: 1.0rem;
+  padding: 0.5rem;
+  background: rgb(238, 177, 63);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.single-event-show-modal-list {
+  position: absolute;
+  top: 7.7rem;
+  right: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  background: rgb(235, 207, 203);
+  opacity: 0.85;
+}
+
+.modal-list-link {
+  padding: 0.5rem 0.7rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.modal-list-link:hover {
+  background: #fff;
+}

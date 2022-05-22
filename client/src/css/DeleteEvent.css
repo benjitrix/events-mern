@@ -1,0 +1,19 @@
+.delete-event {
+  padding-top: var(--padding-from-navbar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.delete-event-container {
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.event-input {
+  display: block;
+  width: 20rem;
+  height: 1.8rem;
+  margin-bottom: 0.5rem;
+}

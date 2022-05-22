@@ -1,0 +1,141 @@
+.event {
+  width: 400px;
+  max-width: 400px;
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+}
+
+.event-detail {
+  padding: 0.4rem;
+}
+
+.event p span:first-child{
+  font-weight: bold;
+}
+
+.title {
+  background-color: rgb(228, 63, 63);
+  margin-bottom: 0.15rem;
+}
+
+.category-type {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(236, 135, 135);
+  margin-top: 0.15rem;
+}
+
+.description {
+  background-color: rgb(228, 63, 63);
+}
+
+.description-more-btn {
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.description-more-btn::before {
+  content: "\00a0 ";
+}
+
+.venue-time-fee-contact {
+  background-color: rgb(236, 135, 135);
+  display: grid;
+  grid-template-areas: 
+  "a a a a"
+  "b b . c"
+  "d d d d"
+  "e e e .";
+}
+
+.event-venue {
+  grid-area: a
+}
+
+.event-time {
+  grid-area: b
+}
+
+.event-fee {
+  grid-area: c
+}
+
+.event-contact {
+  grid-area: d
+}
+
+.event-created {
+  grid-area: e;
+}
+
+.add-to-cart-buy {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(228, 63, 63);
+}
+
+.add-to-cart-input {
+  width: 4rem;
+  height: 1.5rem;
+  margin-right: 0.3rem;
+}
+
+.add-to-cart-btn {
+  padding: 0.15rem 0.2rem;
+  margin-right: 0.3rem;
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  margin-right: 0.3rem;
+}
+
+/* event-hamburger */
+.event-hamburger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.dropdown-hamburger {
+  position: absolute;
+  top: 2.5rem;
+  right: 0.3rem;
+  display: none;
+}
+
+.event:hover .dropdown-hamburger {
+  display: block;
+  font-size: 2.0rem;
+  padding: 0.4rem;
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 4.2rem;
+  right: 2.2rem;
+  opacity: 0;
+  transition: 0s 0.3s;
+}
+
+.event-hamburger:hover .dropdown-menu {
+  opacity: 1;
+  transition: 0s;
+}
+
+.hamburger-link {
+  display: block;
+  padding: 0.6rem 1.0rem;
+  background: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hamburger-link:hover {
+  background-color: beige;
+}

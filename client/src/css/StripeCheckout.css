@@ -1,0 +1,13 @@
+.stripe-checkout-container {
+  /* display: flex;
+  justify-content: center; */
+}
+
+.pre-checkout-btn {
+
+}
+
+.pre-checkout-btn button{
+  width: 30vw;
+  height: 2.0rem;
+}

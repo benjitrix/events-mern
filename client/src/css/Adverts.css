@@ -1,0 +1,13 @@
+.adverts {
+  height: 5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkorange;
+}
+
+.adverts p {
+  text-align: center;
+  font-weight: bold;
+}

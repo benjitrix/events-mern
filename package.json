@@ -1,0 +1,33 @@
+{
+  "name": "events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "cloudinary": "1.28.1",
+    "concurrently": "7.0.0",
+    "cors": "2.8.5",
+    "dotenv": "11.0.0",
+    "express": "4.17.2",
+    "http-status-codes": "2.2.0",
+    "jsonwebtoken": "8.5.1",
+    "mongoose": "6.1.6",
+    "multer": "1.4.4",
+    "stripe": "8.207.0"
+  },
+  "engines": {
+    "node": "14.18.0",
+    "npm": "6.14.15"
+  }
+}

@@ -1,0 +1,18 @@
+:root {
+  --padding-from-navbar: 4rem
+}
+
+.about {
+  padding-top: var(--padding-from-navbar);
+}
+
+.about h2 {
+  padding: 0.5rem 1.0rem;
+  text-transform: capitalize;
+}
+
+.about p {
+  padding: 0 1.5rem;
+  text-indent: 1.0rem;
+  text-align: justify;
+}

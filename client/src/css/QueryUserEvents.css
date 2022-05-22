@@ -1,0 +1,14 @@
+.query-user-events {
+  padding-top: var(--padding-from-navbar);
+}
+
+
+@media screen and (min-width: 996px) {
+  .query-user-events {
+    /* padding-top: var(--padding-from-navbar); */
+    width: 92%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+}

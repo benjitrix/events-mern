@@ -1,0 +1,26 @@
+.logout-user {
+  padding-top: var(--padding-from-navbar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logout-user-container {
+  padding: 0.8rem 0.5rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+
+.logout-label {
+  text-align: center;
+}
+
+.event-logout {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  background: rgb(236, 99, 99);
+  border: rgb(236, 99, 99);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  box-shadow: 2px 3px #808080;
+}

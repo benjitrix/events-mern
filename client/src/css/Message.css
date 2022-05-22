@@ -1,0 +1,12 @@
+.message {
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.error-false  {
+  background: lightgreen;
+}
+
+.error-true {
+  background: rgb(228, 79, 101);
+}

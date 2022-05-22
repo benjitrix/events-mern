@@ -1,0 +1,19 @@
+.query {
+  
+}
+
+.register-event-link {
+  /* text-decoration: none; */
+  text-transform: capitalize;
+}
+
+.search-entry {
+  display: block;
+  width: 12rem;
+  max-width: 17rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-date {
+  margin-bottom: 0.8rem;
+}

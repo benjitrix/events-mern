@@ -1,0 +1,60 @@
+.event-abbreviated-card {
+  width: 25.5rem;
+  height: 6.4rem;
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+  background: rgb(228, 63, 63);
+}
+
+/* cart component start*/
+.event-super-abbreviated-card {
+  width: 14.5rem;
+  height: 3.75rem;
+  padding: 0.4rem;
+  margin-bottom: 0.5rem;
+  background: rgb(228, 63, 63);
+}
+
+@media screen and (min-width: 996px) {
+  .event-super-abbreviated-card {
+    width: 22.5rem;
+  }
+}
+/* cart component end*/
+
+.event-link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #000;
+}
+
+.event-title {
+  font-weight: 700;
+}
+
+.event-category-type {
+  font-weight: 700;
+}
+
+.event-entry-fee {
+  font-weight: 700;
+}
+
+.event-day-created {
+  font-weight: 700;
+}
+
+.event-info p span {
+  font-weight: normal;
+}
+
+.event-image {
+  width: 130px;
+  height: 90px;
+}
+
+.event-super-image {
+  width: 80px;
+  height: 50px;
+}

@@ -1,0 +1,28 @@
+.register-user {
+  padding-top: var(--padding-from-navbar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-user-container {
+  border: 1px solid #000;
+  border-radius: 0.8rem;
+  padding: 1.0rem 1.8rem;
+}
+
+.register-input {
+  display: block;
+  width: 20rem;
+  height: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-user-container p {
+  text-align: center;
+  color: blue;
+}
+
+.register-submit {
+  font-size: 1.15rem;
+}

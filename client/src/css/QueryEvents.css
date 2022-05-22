@@ -1,0 +1,18 @@
+.query-events-container {
+  margin: 3.3rem auto 0rem auto;
+}
+
+
+@media screen and (min-width: 800px) {
+  .query-events-container {
+    width: var(--width-min-width-800px);
+  }
+  .query-events-adverts {
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  .query-events {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+}
