@@ -1,8 +1,10 @@
 // event services
-const url = '/api/v1/event'
+import { ServerURL } from './ServerURL'
+const url = ServerURL + '/api/v1/event'
+
 export default {
   getAllEvents: () => {
-    return fetch('/api/v1/events/all')
+    return fetch(ServerURL + '/api/v1/events/all')
       .then(res => res.json())
       .then(data => data)
   },

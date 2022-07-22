@@ -1,4 +1,5 @@
-const url = 'api/v1/stripe'
+import { ServerURL } from './ServerURL'
+const url = ServerURL + 'api/v1/stripe'
 
 export default {
   payWithStripe: (token, cart) => {

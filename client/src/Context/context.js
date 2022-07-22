@@ -7,7 +7,7 @@ export const AppContext = React.createContext()
 export const AppProvider = ({children}) => {
   const [user, setUser] = useState({name: '', role: ''})
   const [isAuthenticated, setIsAuthenticated] = useState(false)
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [alert, setAlert] = useState('')
   const [error, setError] = useState(true)
   const [token, setToken]= useState('')
@@ -22,12 +22,14 @@ export const AppProvider = ({children}) => {
     if (localStorage.getItem('event-token') === null)  {
       setAlert(false)
       setError(false)
+      setIsAuthenticated(true)
     }
   }, [])
 
   // authenticate user
   useEffect(() => {
     const retrievedToken = localStorage.getItem('event-token')
+    
     if (retrievedToken === null) {
       return console.log('No token retrieved');
     } else {
@@ -59,6 +61,7 @@ export const AppProvider = ({children}) => {
         setCart(data.message.events)
         setQuantities(data.message.events)
         setEntryFees(data.message.events)
+        setIsLoading(false)
         console.log(data);
       })
     }

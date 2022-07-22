@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../Context/context'
@@ -7,11 +7,25 @@ import '../css/Navbar.css'
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
+  const [menuHeight, setMenuHeight] = useState(0)
+
   const { user } = useGlobalContext()
+  const menuRef = useRef()
+
+  function openMenu() {
+    const height = menuRef.current.scrollHeight
+    setShowLinks(true)
+    setMenuHeight(height)
+  }
+
+  function closeMenu() {
+    setShowLinks(false)
+    setMenuHeight(0)
+  }
 
   return (
     <section className='navbar'>
-      <div className='logo-hamburger-container'>
+      <div className='navbar-container'>
         <h2><Link to='/' className='event-logo'>Events</Link></h2>
         <div className={`${user.name ? 'links-hamburger' : 'no-links-hamburger'}`}>
           { 
@@ -41,13 +55,19 @@ const Navbar = () => {
           }
           <p 
             className='hamburger'
-            onClick={() => setShowLinks(!showLinks)} 
+            onMouseEnter={() => openMenu()} 
+            onMouseLeave={() => closeMenu()}
             >
               <FaBars />
           </p>
         </div>
       </div>
-      <div className={`links ${showLinks ? 'show-links' : ''}`}>
+      <div 
+        ref={menuRef} 
+        className={`links ${showLinks ? 'show-links' : ''}`} 
+        style={{height: menuHeight}} 
+        onMouseEnter={() => openMenu()} 
+        onMouseLeave={() => closeMenu()}>
         {
           !user.name && 
           <Link 

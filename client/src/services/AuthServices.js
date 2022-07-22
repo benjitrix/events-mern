@@ -1,7 +1,10 @@
 // user register, login
+import { ServerURL } from './ServerURL'
+const url = ServerURL + '/api/v1/user'
+
 export default {
   registerUser: (user) => {
-    return fetch('/api/v1/user/register', {
+    return fetch(`${url}/register`, {
       method: "POST",
       body: JSON.stringify(user),
       headers: {"Content-type": "application/json"}
@@ -9,7 +12,7 @@ export default {
       .then(data => data)
   },
   loginUser: (user) => {
-    return fetch('/api/v1/user/login', {
+    return fetch(`${url}/login`, {
       method: "POST",
       body: JSON.stringify(user),
       headers: {"Content-type": "application/json"}
@@ -22,7 +25,7 @@ export default {
       .then(data => data)
   },
   isAuthenticated: (token) => {
-    return fetch('/api/v1/user/authenticate', {
+    return fetch(`${url}/authenticate`, {
       method: "GET",
       headers: { Authorization: token }
     }).then(res => res.json())

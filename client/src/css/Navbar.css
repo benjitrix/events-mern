@@ -9,7 +9,7 @@
   border-bottom: 2px solid #000;
 }
 
-.logo-hamburger-container {
+.navbar-container {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
@@ -71,7 +71,7 @@
 
 .show-links {
   width: 100%;
-  height: 12rem;
+  /* height: 12rem; */
 }
 
 .link {

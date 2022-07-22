@@ -1,4 +1,6 @@
-const url = '/api/v1/query/events'
+import { ServerURL } from './ServerURL'
+const url = ServerURL + '/api/v1/query/events'
+
 export default {
   getCategories: () => {
     return fetch(`${url}/categories`)
