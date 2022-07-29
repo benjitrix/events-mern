@@ -1,8 +1,15 @@
 .event {
-  width: 400px;
-  max-width: 400px;
+  width: 87vw;
+  max-width: 87vw;
   margin: 0 auto 1.5rem auto;
   position: relative;
+}
+
+@media screen and (min-width: 996px) {
+  .event {
+    width: 400px;
+    max-width: 400px;
+  }
 }
 
 .event-detail {

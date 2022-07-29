@@ -1,5 +1,5 @@
 .query-user-events {
-  padding-top: var(--padding-from-navbar);
+  padding: var(--padding-from-navbar) 1.0rem;
 }
 
 

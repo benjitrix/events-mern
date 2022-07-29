@@ -27,7 +27,7 @@ const Navbar = () => {
     <section className='navbar'>
       <div className='navbar-container'>
         <h2><Link to='/' className='event-logo'>Events</Link></h2>
-        <div className={`${user.name ? 'links-hamburger' : 'no-links-hamburger'}`}>
+        <div className={`links-mobile ${user.name ? 'links-hamburger' : 'no-links-hamburger'}`}>
           { 
             user.name && 
             <p className= 'nav-user'
@@ -62,6 +62,7 @@ const Navbar = () => {
           </p>
         </div>
       </div>
+      { showLinks && <hr /> }
       <div 
         ref={menuRef} 
         className={`links ${showLinks ? 'show-links' : ''}`} 

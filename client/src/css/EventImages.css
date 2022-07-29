@@ -143,19 +143,9 @@ article.nextSlide {
   /* background: var(--clr-primary-5); */
 }
 
-/* media min-width: 800px */
-@media (min-width: 800px) {
-  .prev,
-  .next {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.5rem;
-  }
-}
-
 /* image gallery */
 .gallery-container {
-  width: 400px;
+  width: 87vw;
   margin: 0 auto;
   overflow: hidden;
   border: 2px solid #000;
@@ -163,13 +153,32 @@ article.nextSlide {
 }
 
 .image-gallery {
-  width: 400px;
+  width: 87vw;
   height: 80px;
   display: flex;
   overflow: hidden;
   background: var(--clr-primary-6);
   padding: 0 0.5rem;
   margin: 0 auto;
+}
+
+/* media min-width: 800px */
+@media screen and (min-width: 996px) {
+  .prev,
+  .next {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+
+  /* image gallery */
+  .gallery-container {
+    width: 400px;
+  }
+
+  .image-gallery {
+    width: 400px;
+  }
 }
 
 .image-gallery .estate-photo {
